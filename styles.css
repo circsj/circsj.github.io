@@ -197,6 +197,16 @@ a {
   letter-spacing: -0.03em;
 }
 
+.section-title-compact {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  letter-spacing: -0.02em;
+}
+
+.section-title-compact .section-en {
+  margin-top: 4px;
+  font-size: 0.72rem;
+}
+
 .section-title .section-en {
   display: block;
   margin-top: 8px;
@@ -366,6 +376,10 @@ a {
   gap: 0;
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
+}
+
+.people-grid-single {
+  grid-template-columns: 1fr;
 }
 
 .person-card {
