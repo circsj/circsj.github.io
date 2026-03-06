@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
-  <title id="title">Main Visual Placeholder</title>
-  <desc id="desc">Replace this placeholder with a lab photo for the homepage.</desc>
+  <title id="title">Main Visual Sample</title>
+  <desc id="desc">White sample image with lab title text.</desc>
   <rect width="1200" height="900" fill="#ffffff" />
-  <rect x="40" y="40" width="1120" height="820" fill="#ffffff" stroke="#d9d9d9" stroke-width="2" />
-  <line x1="40" y1="240" x2="1160" y2="240" stroke="#d9d9d9" stroke-width="2" />
-  <line x1="40" y1="520" x2="1160" y2="520" stroke="#d9d9d9" stroke-width="2" />
-  <text x="80" y="150" fill="#111111" font-size="52" font-family="Arial, sans-serif" font-weight="700">
-    Main Image Area
+  <rect x="24" y="24" width="1152" height="852" fill="#ffffff" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="24" y1="210" x2="1176" y2="210" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="24" y1="680" x2="1176" y2="680" stroke="#d9d9d9" stroke-width="2" />
+  <text x="72" y="150" fill="#111111" font-size="68" font-family="Arial, sans-serif" font-weight="700">
+    청정순환기술연구실
   </text>
-  <text x="80" y="320" fill="#6b6b6b" font-size="30" font-family="Arial, sans-serif">
-    Replace images/main-visual.svg with your lab photo
+  <text x="72" y="270" fill="#6b6b6b" font-size="38" font-family="Arial, sans-serif">
+    Clean Circular Technology Laboratory
   </text>
-  <text x="80" y="380" fill="#6b6b6b" font-size="30" font-family="Arial, sans-serif">
-    or update the src path in index.html.
+  <text x="72" y="760" fill="#6b6b6b" font-size="28" font-family="Arial, sans-serif">
+    Sample white image. Replace with PNG, JPG, JPEG, WEBP or SVG.
   </text>
 </svg>

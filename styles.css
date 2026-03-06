@@ -115,10 +115,7 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(420px, 0.9fr);
-  gap: 48px;
-  align-items: center;
+  display: block;
   padding: 10px 0 42px;
   border-bottom: 1px solid var(--line);
 }
@@ -140,7 +137,7 @@ a {
 
 .hero-copy .subtitle {
   margin: 18px 0 0;
-  max-width: 720px;
+  max-width: 920px;
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -153,6 +150,10 @@ a {
   letter-spacing: 0.02em;
 }
 
+.hero-media-wrap {
+  margin-top: 28px;
+}
+
 .hero-media {
   border: 1px solid var(--line);
   background: #fff;
@@ -162,7 +163,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 7;
 }
 
 .hero-note {
@@ -173,6 +174,10 @@ a {
 
 .section {
   padding: 38px 0 0;
+}
+
+.compact-section {
+  padding-top: 28px;
 }
 
 .section-head {
@@ -415,15 +420,46 @@ a {
 
 .pub-item {
   grid-template-columns: 100px minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 0;
 }
 
 .pub-title {
   font-weight: 600;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.pub-authors {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
 }
 
 .pub-meta {
-  margin-top: 6px;
+  margin-top: 3px;
   color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
+.outline-button:hover {
+  border-color: var(--line-strong);
 }
 
 .contact-list {
@@ -455,7 +491,6 @@ a {
     justify-content: flex-start;
   }
 
-  .hero,
   .two-column,
   .notice-layout {
     grid-template-columns: 1fr;
