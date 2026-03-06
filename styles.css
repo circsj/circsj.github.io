@@ -38,23 +38,62 @@ a {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #fff;
   border-bottom: 1px solid var(--line);
 }
 
 .nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 32px;
   padding: 22px 0 18px;
 }
 
-.logo {
+.nav .logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
+  width: fit-content;
+}
+
+.logo-mark-wrap {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.logo-text-wrap {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  display: block;
+  min-width: 0;
 }
 
 .logo small {
@@ -83,7 +122,7 @@ a {
   border-right: 1px solid var(--line);
 }
 
-.nav a {
+.nav ul a {
   min-width: 118px;
   padding: 10px 16px;
   display: flex;
@@ -130,7 +169,7 @@ a {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-size: 2.4rem;
   line-height: 1.08;
   letter-spacing: -0.04em;
 }
