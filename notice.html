@@ -9,110 +9,68 @@
   <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="index.html">CCTLab</a>
+        <a class="logo" href="index.html">
+          세종대학교 청정순환기술연구실
+          <small>Clean Circular Technology Laboratory</small>
+        </a>
         <ul>
-          <li><a href="index.html">메인</a></li>
-          <li><a href="about.html">연구실 소개</a></li>
-          <li><a href="research.html">연구 분야</a></li>
-          <li><a href="members.html">구성원</a></li>
-          <li><a href="publications.html">출판물</a></li>
-          <li><a class="active" href="notice.html">공지사항</a></li>
-          <li><a href="contact.html">연락처</a></li>
+          <li><a href="index.html"><span class="nav-ko">메인</span><span class="nav-en">Home</span></a></li>
+          <li><a href="about.html"><span class="nav-ko">연구실 소개</span><span class="nav-en">Introduction</span></a></li>
+          <li><a href="research.html"><span class="nav-ko">연구 분야</span><span class="nav-en">Research</span></a></li>
+          <li><a href="members.html"><span class="nav-ko">구성원</span><span class="nav-en">Members</span></a></li>
+          <li><a href="publications.html"><span class="nav-ko">출판물</span><span class="nav-en">Publications</span></a></li>
+          <li><a class="active" href="notice.html"><span class="nav-ko">공지사항</span><span class="nav-en">Notice</span></a></li>
+          <li><a href="contact.html"><span class="nav-ko">연락처</span><span class="nav-en">Contact</span></a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="section container">
-      <h2 class="section-title">공지사항</h2>
-      <p class="lead">
-        공지사항은 게시판 형식으로 제공되며, 글 작성은 관리자 로그인 후에만
-        가능합니다.
-      </p>
-
-      <section class="board-layout">
-        <div class="card board-list-card">
-          <div class="board-head">
-            <h3>공지 목록</h3>
-            <span id="notice-count" class="board-count"></span>
-          </div>
-          <div id="notice-empty" class="notice-msg">
-            등록된 공지사항이 없습니다.
-          </div>
-          <div class="board-table-wrap">
-            <table class="board-table">
-              <thead>
-                <tr>
-                  <th scope="col">번호</th>
-                  <th scope="col">제목</th>
-                  <th scope="col">작성일</th>
-                </tr>
-              </thead>
-              <tbody id="notice-table-body"></tbody>
-            </table>
-          </div>
+    <main class="page-main container">
+      <section class="section">
+        <div class="section-head">
+          <h2 class="section-title">
+            공지사항
+            <span class="section-en">Notice Board</span>
+          </h2>
+          <p class="section-copy">
+            이 페이지는 정적 HTML 게시판입니다. 새 글은 아래 `notice-item` 블록을
+            복사해서 직접 추가하면 됩니다.
+          </p>
         </div>
 
-        <aside class="board-side">
-          <section class="card notice-view-card">
-            <div class="board-head">
-              <h3>공지 상세</h3>
+        <div class="notice-board">
+          <article class="notice-item">
+            <div class="notice-date">2026.03.06</div>
+            <div class="notice-body">
+              <h3 class="notice-title">홈페이지 공지사항 페이지 개편 안내</h3>
+              <p>
+                공지사항은 관리자 화면 없이 정적 게시판 형식으로 운영됩니다.
+                앞으로는 `notice.html`에서 직접 글을 추가하거나 수정하면 됩니다.
+              </p>
             </div>
-            <div id="notice-detail" class="notice-detail empty">
-              왼쪽 목록에서 공지를 선택하세요.
+          </article>
+
+          <article class="notice-item">
+            <div class="notice-date">2026.03.02</div>
+            <div class="notice-body">
+              <h3 class="notice-title">2026년 봄학기 연구실 세미나 일정 안내</h3>
+              <p>
+                3월부터 매주 수요일 오후 4시에 정기 세미나를 진행합니다. 상세
+                일정은 추후 업데이트합니다.
+              </p>
             </div>
-          </section>
+          </article>
+        </div>
 
-          <section class="card admin-card">
-            <div class="board-head">
-              <h3>관리자</h3>
-              <button type="button" id="logout-btn" class="button-secondary hidden">
-                로그아웃
-              </button>
-            </div>
-
-            <form id="admin-login-form" class="admin-login-form">
-              <div class="form-row">
-                <label for="admin-id">아이디</label>
-                <input id="admin-id" type="text" autocomplete="username" required />
-              </div>
-              <div class="form-row">
-                <label for="admin-password">비밀번호</label>
-                <input
-                  id="admin-password"
-                  type="password"
-                  autocomplete="current-password"
-                  required
-                />
-              </div>
-              <button type="submit">관리자 로그인</button>
-            </form>
-
-            <div id="admin-login-message" class="notice-msg hidden"></div>
-
-            <form id="notice-form" class="admin-write-form hidden">
-              <div class="form-row">
-                <label for="title">제목</label>
-                <input id="title" type="text" placeholder="공지 제목" required />
-              </div>
-              <div class="form-row">
-                <label for="content">내용</label>
-                <textarea
-                  id="content"
-                  placeholder="공지 내용을 입력하세요."
-                  required
-                ></textarea>
-              </div>
-              <button type="submit">공지 등록</button>
-            </form>
-          </section>
-        </aside>
+        <p class="notice-guide">
+          수정 방법: 같은 형식의 `&lt;article class="notice-item"&gt; ... &lt;/article&gt;`
+          블록을 복사해 날짜, 제목, 내용을 바꾸면 됩니다.
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">© 2026 CCTLab, Sejong University</div>
     </footer>
-
-    <script src="notice.js"></script>
   </body>
 </html>

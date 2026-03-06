@@ -10,54 +10,110 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="home-page">
+  <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="index.html">CCTLab</a>
+        <a class="logo" href="index.html">
+          세종대학교 청정순환기술연구실
+          <small>Clean Circular Technology Laboratory</small>
+        </a>
         <ul>
-          <li><a class="active" href="index.html">메인</a></li>
-          <li><a href="about.html">연구실 소개</a></li>
-          <li><a href="research.html">연구 분야</a></li>
-          <li><a href="members.html">구성원</a></li>
-          <li><a href="publications.html">출판물</a></li>
-          <li><a href="notice.html">공지사항</a></li>
-          <li><a href="contact.html">연락처</a></li>
+          <li>
+            <a class="active" href="index.html">
+              <span class="nav-ko">메인</span>
+              <span class="nav-en">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <span class="nav-ko">연구실 소개</span>
+              <span class="nav-en">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="research.html">
+              <span class="nav-ko">연구 분야</span>
+              <span class="nav-en">Research</span>
+            </a>
+          </li>
+          <li>
+            <a href="members.html">
+              <span class="nav-ko">구성원</span>
+              <span class="nav-en">Members</span>
+            </a>
+          </li>
+          <li>
+            <a href="publications.html">
+              <span class="nav-ko">출판물</span>
+              <span class="nav-en">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="notice.html">
+              <span class="nav-ko">공지사항</span>
+              <span class="nav-en">Notice</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.html">
+              <span class="nav-ko">연락처</span>
+              <span class="nav-en">Contact</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <span class="badge">Clean Circular Technology Laboratory</span>
-        <h1>세종대학교 청정순환기술연구실</h1>
-        <p>
-          CCTLab은 청정에너지, 순환공정, 환경소재를 중심으로 지속가능한
-          미래를 위한 기술을 연구합니다. 실험 기반 연구와 데이터 기반 해석을
-          함께 수행하며 산업과 사회에 기여하는 실용 기술을 개발합니다.
-        </p>
-      </div>
-    </section>
+    <main class="page-main">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">SEJONG UNIVERSITY</p>
+          <h1>
+            청정순환기술연구실
+            <span class="title-en">Clean Circular Technology Laboratory</span>
+          </h1>
+          <p class="subtitle">
+            청정에너지, 순환공정, 환경소재를 중심으로 지속가능한 미래를 위한
+            실용 연구를 수행합니다. 메인 이미지는 아래 파일만 교체하면 바로
+            반영되도록 구성했습니다.
+          </p>
+        </div>
+        <div>
+          <div class="hero-media">
+            <img
+              src="images/main-visual.svg"
+              alt="연구실 메인 이미지"
+            />
+          </div>
+          <p class="hero-note">
+            메인 사진 교체: `images/main-visual.svg` 파일을 원하는 사진 파일명으로
+            바꾸거나 같은 경로에 덮어쓰면 됩니다.
+          </p>
+        </div>
+      </section>
 
-    <main class="section container">
-      <h2 class="section-title">연구실 안내</h2>
-      <p class="lead">
-        메뉴별 전용 페이지로 구성되어 있으며, 공지사항 페이지는 게시판 형식으로
-        운영됩니다.
-      </p>
-      <div class="grid">
-        <article class="card">
-          <h3>연구 방향</h3>
-          <p>자원순환, 저탄소 공정, 환경 소재를 아우르는 융합 연구 수행</p>
-        </article>
-        <article class="card">
-          <h3>학술 성과</h3>
-          <p>국내외 학술지, 학회 발표, 산학 협력 성과를 지속적으로 축적</p>
-        </article>
-        <article class="card">
-          <h3>참여 안내</h3>
-          <p>대학원 진학, 인턴, 공동연구 문의는 연락처 페이지에서 확인</p>
-        </article>
-      </div>
+      <section class="section container">
+        <div class="section-head">
+          <h2 class="section-title">
+            연구실 개요
+            <span class="section-en">Laboratory Overview</span>
+          </h2>
+        </div>
+        <div class="line-grid">
+          <article class="line-card">
+            <h3>연구 방향</h3>
+            <p>자원순환, 저탄소 공정, 환경 소재를 아우르는 융합형 연구 수행</p>
+          </article>
+          <article class="line-card">
+            <h3>주요 활동</h3>
+            <p>실험 기반 검증, 데이터 해석, 산학 협력을 연결하는 실용 연구 운영</p>
+          </article>
+          <article class="line-card">
+            <h3>참여 안내</h3>
+            <p>대학원 진학, 학부연구생, 공동연구 문의는 연락처 페이지에서 확인</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
