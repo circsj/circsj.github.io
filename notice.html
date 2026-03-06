@@ -32,16 +32,16 @@
             공지사항
             <span class="section-en">Notice Board</span>
           </h2>
-          <p class="section-copy">
-            왼쪽 목록을 클릭하면 오른쪽에 내용이 표시됩니다. 새 글은 아래
-            목록의 `data-title`, `data-date`, `data-content` 값만 직접 추가하면 됩니다.
-          </p>
         </div>
 
         <div class="notice-layout">
           <div class="notice-list-panel">
             <div class="notice-list-head">공지 목록</div>
             <div class="notice-board notice-board-list">
+
+              <!-- 수정 방법: `button` 버튼 복사해서 `data-title`, `data-date`,`data-content` 수정.
+              -->  
+              
               <button
                 type="button"
                 class="notice-item notice-trigger is-active"
@@ -55,18 +55,6 @@
                 </span>
               </button>
 
-              <button
-                type="button"
-                class="notice-item notice-trigger"
-                data-title="2026년 봄학기 연구실 세미나 일정 안내"
-                data-date="2026.03.02"
-                data-content="3월부터 매주 수요일 오후 4시에 정기 세미나를 진행합니다. 상세 일정은 추후 업데이트합니다."
-              >
-                <span class="notice-date">2026.03.02</span>
-                <span class="notice-body">
-                  <strong class="notice-title">2026년 봄학기 연구실 세미나 일정 안내</strong>
-                </span>
-              </button>
             </div>
           </div>
 
@@ -83,10 +71,7 @@
           </div>
         </div>
 
-        <p class="notice-guide">
-          수정 방법: `notice-trigger` 버튼 한 줄을 복사해서 `data-title`, `data-date`,
-          `data-content`만 바꾸면 됩니다.
-        </p>
+
       </section>
     </main>
 
