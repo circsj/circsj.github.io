@@ -33,38 +33,59 @@
             <span class="section-en">Notice Board</span>
           </h2>
           <p class="section-copy">
-            이 페이지는 정적 HTML 게시판입니다. 새 글은 아래 `notice-item` 블록을
-            복사해서 직접 추가하면 됩니다.
+            왼쪽 목록을 클릭하면 오른쪽에 내용이 표시됩니다. 새 글은 아래
+            목록의 `data-title`, `data-date`, `data-content` 값만 직접 추가하면 됩니다.
           </p>
         </div>
 
-        <div class="notice-board">
-          <article class="notice-item">
-            <div class="notice-date">2026.03.06</div>
-            <div class="notice-body">
-              <h3 class="notice-title">홈페이지 공지사항 페이지 개편 안내</h3>
-              <p>
-                공지사항은 관리자 화면 없이 정적 게시판 형식으로 운영됩니다.
-                앞으로는 `notice.html`에서 직접 글을 추가하거나 수정하면 됩니다.
-              </p>
-            </div>
-          </article>
+        <div class="notice-layout">
+          <div class="notice-list-panel">
+            <div class="notice-list-head">공지 목록</div>
+            <div class="notice-board notice-board-list">
+              <button
+                type="button"
+                class="notice-item notice-trigger is-active"
+                data-title="홈페이지 공지사항 페이지 개편 안내"
+                data-date="2026.03.06"
+                data-content="공지사항은 관리자 화면 없이 목록 클릭형 게시판으로 운영됩니다. 앞으로는 notice.html에서 항목을 직접 추가하거나 수정하면 됩니다."
+              >
+                <span class="notice-date">2026.03.06</span>
+                <span class="notice-body">
+                  <strong class="notice-title">홈페이지 공지사항 페이지 개편 안내</strong>
+                </span>
+              </button>
 
-          <article class="notice-item">
-            <div class="notice-date">2026.03.02</div>
-            <div class="notice-body">
-              <h3 class="notice-title">2026년 봄학기 연구실 세미나 일정 안내</h3>
-              <p>
-                3월부터 매주 수요일 오후 4시에 정기 세미나를 진행합니다. 상세
-                일정은 추후 업데이트합니다.
-              </p>
+              <button
+                type="button"
+                class="notice-item notice-trigger"
+                data-title="2026년 봄학기 연구실 세미나 일정 안내"
+                data-date="2026.03.02"
+                data-content="3월부터 매주 수요일 오후 4시에 정기 세미나를 진행합니다. 상세 일정은 추후 업데이트합니다."
+              >
+                <span class="notice-date">2026.03.02</span>
+                <span class="notice-body">
+                  <strong class="notice-title">2026년 봄학기 연구실 세미나 일정 안내</strong>
+                </span>
+              </button>
             </div>
-          </article>
+          </div>
+
+          <div class="notice-detail-panel">
+            <div class="notice-list-head">공지 내용</div>
+            <article class="notice-view">
+              <div id="notice-view-date" class="notice-date">2026.03.06</div>
+              <h3 id="notice-view-title" class="notice-view-title">홈페이지 공지사항 페이지 개편 안내</h3>
+              <div id="notice-view-content" class="notice-view-content">
+                공지사항은 관리자 화면 없이 목록 클릭형 게시판으로 운영됩니다.
+                앞으로는 notice.html에서 항목을 직접 추가하거나 수정하면 됩니다.
+              </div>
+            </article>
+          </div>
         </div>
 
         <p class="notice-guide">
-          수정 방법: 같은 형식의 `&lt;article class="notice-item"&gt; ... &lt;/article&gt;`
-          블록을 복사해 날짜, 제목, 내용을 바꾸면 됩니다.
+          수정 방법: `notice-trigger` 버튼 한 줄을 복사해서 `data-title`, `data-date`,
+          `data-content`만 바꾸면 됩니다.
         </p>
       </section>
     </main>
@@ -72,5 +93,7 @@
     <footer class="site-footer">
       <div class="container">© 2026 CCTLab, Sejong University</div>
     </footer>
+
+    <script src="notice.js"></script>
   </body>
 </html>

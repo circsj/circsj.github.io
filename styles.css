@@ -94,7 +94,7 @@ a {
 }
 
 .nav a.active {
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .nav-ko {
@@ -278,13 +278,68 @@ a {
   border-top: 1px solid var(--line);
 }
 
+.notice-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.9fr) minmax(0, 1.1fr);
+  gap: 32px;
+}
+
+.notice-list-head {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.notice-board-list {
+  border-top: 0;
+}
+
 .notice-item {
   grid-template-columns: 140px minmax(0, 1fr);
+}
+
+.notice-trigger {
+  width: 100%;
+  border: 0;
+  background: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.notice-trigger.is-active {
+  background: #ffffff;
+}
+
+.notice-trigger:hover .notice-title,
+.notice-trigger.is-active .notice-title {
+  text-decoration: underline;
 }
 
 .notice-title {
   margin: 0 0 8px;
   font-size: 1.12rem;
+}
+
+.notice-detail-panel {
+  border-top: 1px solid var(--line);
+}
+
+.notice-view {
+  padding: 18px 0 0;
+}
+
+.notice-view-title {
+  margin: 12px 0 14px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.notice-view-content {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  white-space: pre-wrap;
 }
 
 .notice-body p {
@@ -320,7 +375,7 @@ a {
 .person-photo {
   border: 1px solid var(--line);
   aspect-ratio: 4 / 5;
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 .person-photo img {
@@ -401,7 +456,8 @@ a {
   }
 
   .hero,
-  .two-column {
+  .two-column,
+  .notice-layout {
     grid-template-columns: 1fr;
   }
 
