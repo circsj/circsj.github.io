@@ -43,50 +43,53 @@
         <div class="notice-layout">
           <div class="notice-list-panel">
             <div class="notice-list-head">공지 목록</div>
-            <div class="notice-board notice-board-list">
-              <!-- 공지사항은 아래 버튼을 복사해서 추가 -->
-
-
-              <button
-                type="button"
-                class="notice-item notice-trigger is-active"
-                data-title="홈페이지 공지사항 페이지 개편 안내"
-                data-date="2026.03.06"
-                data-content="test"
-              >
-                <span class="notice-date">2026.03.06</span>
-                <span class="notice-body">
-                  <strong class="notice-title">홈페이지 공지사항 페이지 개편 안내</strong>
-                </span>
-              </button>
-
-              
-
-              <button
-                type="button"
-                class="notice-item notice-trigger is-active"
-                data-title="홈페이지 공지사항 페이지 개편 안내"
-                data-date="2026.03.06"
-                data-content="test2."
-              >
-                <span class="notice-date">2026.03.06</span>
-                <span class="notice-body">
-                  <strong class="notice-title">홈페이지 공지사항 페이지 개편 안내</strong>
-                </span>
-              </button>
-            </div>
+            <div id="notice-list" class="notice-board notice-board-list"></div>
           </div>
 
           <div class="notice-detail-panel">
             <div class="notice-list-head">공지 내용</div>
             <article class="notice-view">
-              <div id="notice-view-date" class="notice-date">2026.03.06</div>
-              <h3 id="notice-view-title" class="notice-view-title">홈페이지 공지사항 페이지 개편 안내</h3>
-              <div id="notice-view-content" class="notice-view-content">                
-              </div>
+              <div id="notice-view-date" class="notice-date"></div>
+              <h3 id="notice-view-title" class="notice-view-title"></h3>
+              <div id="notice-view-content" class="notice-view-content"></div>
             </article>
           </div>
         </div>
+
+        <section id="notice-source" class="notice-source" aria-label="notice source">
+          <!-- 새 공지는 이 notice-entry 블록만 복사해서 추가하면 됩니다. -->
+
+          <!--
+          <article class="notice-entry">
+            <h3 class="notice-entry-title">test 1</h3>
+            <p class="notice-entry-date">2026.03.07</p>
+            <div class="notice-entry-content">
+              첫 번째 테스트 공지입니다.
+
+              왼쪽 목록에는 제목과 날짜가 표시되고,
+              이 공지를 클릭하면 오른쪽에 이 본문이 그대로 표시됩니다.
+            </div>
+          </article>
+
+          <article class="notice-entry">
+            <h3 class="notice-entry-title">test 2</h3>
+            <p class="notice-entry-date">2026.03.08</p>
+            <div class="notice-entry-content">
+              두 번째 테스트 공지입니다.
+
+              공지 본문을 여러 줄로 적으면 줄바꿈도 유지됩니다.
+            </div>
+          </article>
+          -->
+
+          <article class="notice-entry">
+            <h3 class="notice-entry-title">홈페이지 오픈 </h3>
+            <p class="notice-entry-date">-</p>
+            <div class="notice-entry-content">
+              홈페이지를 오픈했습니다.
+            </div>
+          </article>
+        </section>
       </section>
     </main>
 
