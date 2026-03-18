@@ -89,6 +89,16 @@ a {
   object-position: center center;
 }
 
+.logo-mark-wrap-wide {
+  width: 132px;
+  min-width: 132px;
+}
+
+.logo-mark-wide {
+  width: 122px;
+  height: 44px;
+}
+
 .logo-text-wrap {
   min-height: 44px;
   display: flex;
@@ -763,6 +773,16 @@ a {
 @media (max-width: 720px) {
   .container {
     width: min(100%, calc(100% - 28px));
+  }
+
+  .logo-mark-wrap-wide {
+    width: 108px;
+    min-width: 108px;
+  }
+
+  .logo-mark-wide {
+    width: 98px;
+    height: 40px;
   }
 
   .nav ul {
