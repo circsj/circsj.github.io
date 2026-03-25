@@ -72,9 +72,9 @@ a {
 }
 
 .logo-mark-wrap {
-  width: 188px;
-  min-width: 188px;
-  height: 64px;
+  width: 132px;
+  min-width: 132px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,15 +82,15 @@ a {
 }
 
 .logo-mark {
-  width: 178px;
-  height: 60px;
+  width: 125px;
+  height: 42px;
   display: block;
   object-fit: contain;
   object-position: center center;
 }
 
 .logo-text-wrap {
-  min-height: 64px;
+  min-height: 45px;
   display: flex;
   align-items: center;
 }
@@ -766,17 +766,17 @@ a {
   }
 
   .logo-mark-wrap {
-    width: 132px;
-    min-width: 132px;
+    width: 92px;
+    min-width: 92px;
   }
 
   .logo-mark {
-    width: 122px;
-    height: 44px;
+    width: 85px;
+    height: 31px;
   }
 
   .logo-text-wrap {
-    min-height: 44px;
+    min-height: 31px;
   }
 
   .nav ul {
